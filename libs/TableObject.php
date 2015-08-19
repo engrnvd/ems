@@ -220,9 +220,9 @@ class TableObject{
         $sql .= " WHERE ".$conditionStr;
 
         // the following is used for pagination
+        global $pagination, $curPage;
         if($tryPagination)
         {
-            global $pagination, $curPage;
             if($curPage && $curPage->isPaginated()){
                 $sql = $pagination->prepSql($sql);
                 $curPage->saveConfig('pagination',false);
