@@ -23,7 +23,7 @@ class Fee_voucher extends Fee_voucherAuto{
      * @var CalculatedColumn
      */
     public $prev_arrears;
-    static $orderBy = " year, month"; // for ordering in sql query
+//    static $orderBy = "`fee_vouchers`.`year`, `fee_vouchers`.`month`"; // for ordering in sql query
 
     /**
      * @param $id

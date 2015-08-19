@@ -205,9 +205,10 @@ class TableObject{
     /**
      * @param $conditionStr
      * @param bool $findOne
+     * @param bool $tryPagination
      * @return TableObject[] | Fee_voucher[] | Student_attendance_record[]
      */
-    static function findByCondition( $conditionStr, $findOne = false ){
+    static function findByCondition( $conditionStr, $findOne = false, $tryPagination = true ){
         $sql = "SELECT *,".static::$tablename.".id as id FROM ".static::$tablename;
         // we exclusively include ",static::$tablename.id as id" because join statements cause confusion on the id field
         if(!empty(static::$joinedTables)){
@@ -217,11 +218,15 @@ class TableObject{
             }
         }
         $sql .= " WHERE ".$conditionStr;
+
         // the following is used for pagination
-        global $pagination, $curPage;
-        if($curPage && $curPage->isPaginated()){
-            $sql = $pagination->prepSql($sql);
-            $curPage->saveConfig('pagination',false);
+        if($tryPagination)
+        {
+            global $pagination, $curPage;
+            if($curPage && $curPage->isPaginated()){
+                $sql = $pagination->prepSql($sql);
+                $curPage->saveConfig('pagination',false);
+            }
         }
 
         if(static::$orderBy){ $sql .= " ORDER BY ".static::$orderBy; }
@@ -240,7 +245,7 @@ class TableObject{
      */
     static function findByString($str){
         $cond = static::getConditionStr($str);
-        return static::findByCondition($cond);
+        return static::findByCondition($cond, false, false);
     }
 
     /**
@@ -359,11 +364,13 @@ class TableObject{
         $query = urldecode($query); // query will normally come through the url
         //pr($query);
         $cond = array();
-//        $columns = static::getColumns();
+        //$columns = static::getColumns();
         $columns = static::$displayFields;
+        $columns[] = 'id';
+//        pr($columns);exit;
         foreach ( $columns as $column ){
-//            if($column->name != 'id'){ $cond[] = "{$column->name} LIKE '%{$query}%'";}
-            $cond[] = "{$column} LIKE '%{$query}%'";
+            if($column != 'id'){ $cond[] = "{$column} LIKE '%{$query}%'";}
+            else $cond[] = "{$column} = '{$query}'";
         }
         return join(" OR ", $cond);
     }
