@@ -1,0 +1,75 @@
+@media print {
+
+  * {
+    text-shadow: none !important;
+    color: #000 !important; // Black prints faster: h5bp.com/s
+    background: transparent !important;
+    box-shadow: none !important;
+    overflow: visible !important;
+  }
+
+  body{
+    font-size: 11px;
+  }
+
+  .table-responsive{
+    border: none;
+  }
+
+  a{
+    font-weight: normal !important;
+  }
+  h1{
+    font-size: 22px !important;
+  }
+  h2{
+    font-size: 20px !important;
+  }
+
+  h3{
+    font-size: 18px !important;
+  }
+
+  h4{
+    font-size: 16px !important;
+  }
+
+  h5{
+    font-size: 14px !important;
+  }
+
+  @printBorder: 1px solid #666;
+  .headerForPrint{
+
+    border-top: @printBorder;
+    border-bottom: @printBorder;
+    padding: 0.5em;
+    @logoSize : 30px;
+    .logo img{
+      width: @logoSize;
+      float: left;
+    }
+    h1{
+      margin: 3px @logoSize+7px;
+    }
+  }
+
+  .footerForPrint{
+    border-top: @printBorder;
+    text-align: right;
+    font-size: 0.8em;
+    color: #ddd !important;
+  }
+
+  .pagebreak{
+    opacity: 0;
+  }
+
+}
+
+.pagebreak{
+  background-color: #ddd;
+  color: #666;
+  text-align: center;
+  letter-spacing: 0.3em;
+}

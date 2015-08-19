@@ -1,0 +1,8 @@
+- Check default values
+- Pages
+- Crud pages
+
+Temp:
+- added fine_records
+// - added column lastYearArrears
+//   ALTER TABLE  `students` ADD  `last_class_arrears` INT NOT NULL DEFAULT  '0' AFTER  `annual_dues` ;

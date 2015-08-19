@@ -1,0 +1,4 @@
+[25-May-2015 08:18:48 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/sesedu/public_html/new/libs/Database.php on line 438
+[25-May-2015 08:22:18 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/sesedu/public_html/new/libs/Database.php on line 416
+[25-May-2015 08:25:54 UTC] PHP Fatal error:  Can't use method return value in write context in /home/sesedu/public_html/new/rutines/feeVouchersCorrection.php on line 38
+[25-May-2015 08:27:00 UTC] PHP Fatal error:  Class 'Fee_voucher_datails' not found in /home/sesedu/public_html/new/libs/TableObject.php on line 489

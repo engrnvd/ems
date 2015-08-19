@@ -1,0 +1,21 @@
+.photoThumb{
+  width: 160px;
+  height: 210px;
+}
+
+#voucher_generator .photoThumb{
+  @width : 60px;
+  width: @width;
+  height: @width*1.3125;
+  position: absolute;
+//  top: 0; left: 0;
+  img{
+    position: absolute;
+    left: 17px;
+    width: @width;
+    height: @width*1.3125;
+  }
+}
+#photoContainer [type=file]{
+  opacity: 0;
+}

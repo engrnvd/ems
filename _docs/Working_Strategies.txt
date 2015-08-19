@@ -1,0 +1,57 @@
+joinedTables
+============
+displayFields
+=============
+childClasses
+childRefField
+=============
+fkeyInfo
+=============
+customValidationRules
+=============
+$this->guardian_id->fkeyInfo = new FKeyInfo('','id','hint');
+
+
+
+
+# relations:
+ - one to one : joinedClasses
+    - crud page has a page info
+    - one student -> one person
+ - one to many : childTables
+    - person -> many student recs
+    - Class -> many students
+    - test -> many test records
+ - many to many : linkedClasses
+    - subj. comb.s <-> classes
+# fkeys
+# displayFields, title()
+
+
+
+# bake models
+# complete TableObject class
+# store fkey relations
+# store default_value relations
+# implement create; class by class and hence
+ - improve UI
+ - improve save_to_db module
+ - improve data_validation rules
+ - improve log_action
+
+
+******************************************************
+Where to store fkey relations?? db or class definition?
+ - First in db
+ - Then in class definition using script
+
+OOP or Simple Arrays??
+OOP:
+ - Modularity
+ - Standard
+******************************************************
+insert fkey relationships
+
+make models
+
+TableObject class

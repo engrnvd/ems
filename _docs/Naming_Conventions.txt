@@ -1,0 +1,14 @@
+* Primary key for every table should have a column name of 'id'. It is also supposed to be auto incremented
+* Table names are plurals e.g. persons, users, employees, cities
+* link tables are named as table1__table2
+
+
+
+
+  //- where table1 and table2 are singular names of the tables
+//* Default Values Table:
+    //- Fields are named according to their column names e.g.
+    //- 'last_date_for_fee_submission' should be named 'Last Date For Fee Submission'
+
+// * Foriegn Keys are named after the parent table. e.g. parent_id
+// * column names should not contain '-' as it will be used in id attribute in the markup for each value fetched from database

@@ -1,0 +1,22 @@
+.filterOptions{
+  border: 1px solid @brand-primary;
+  border-radius: 7px;
+  margin-bottom: 1em;
+}
+#filterOptionsForm{
+  .fkeyInput + a{
+    display: none;
+  }
+  .form-group{
+    vertical-align: bottom;
+    input, select, textarea{
+      border-radius: 0;
+      border-color: @brand-primary;
+      border-width: 1px;
+    }
+  }
+  select,input,textarea{
+    padding: 0;
+    text-align: center;
+  }
+}

@@ -1,0 +1,13 @@
+Alt+Shft+c
+ - Review recent changes in the project
+
+ Ctrl+Click
+ a tab in the editor to navigate to any part of the file path. Select the necessary element in the drop-down, and the corresponding file path is opened in an external browser (e.g., in the Explorer, if your OS is Windows).
+
+To open any class or file in the editor at the desired line, press Ctrl+Shift+N (Navigate | File), start typing the name, and choose the one from the suggestion list. Then type the colon (:) and a line number.
+The selected file will open with the caret at the specified line.
+
+Alt Click for multiple selection
+
+To quickly find a menu command or toolbar action, you do not need to look through the menus. Just press Ctrl+Shift+A (Help | Find Action on the main menu) and start typing the name of the action. Choose the desired action from the suggestion list.
+

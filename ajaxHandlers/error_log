@@ -1,0 +1,5 @@
+[19-Mar-2015 11:59:57 UTC] PHP Fatal error:  Call to a member function getLinkedRecs() on a non-object in /home/sesedu/public_html/new/models/Clas.php on line 54
+[19-Mar-2015 15:00:10 UTC] PHP Fatal error:  Call to a member function getLinkedRecs() on a non-object in /home/sesedu/public_html/new/models/Clas.php on line 54
+[19-Mar-2015 15:00:57 UTC] PHP Fatal error:  Call to a member function getLinkedRecs() on a non-object in /home/sesedu/public_html/new/models/Clas.php on line 54
+[19-Mar-2015 15:04:23 UTC] PHP Fatal error:  Call to a member function getLinkedRecs() on a non-object in /home/sesedu/public_html/new/models/Clas.php on line 54
+[04-May-2015 07:10:03 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/sesedu/public_html/new/libs/TableObject.php on line 283

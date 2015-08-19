@@ -1,0 +1,10 @@
+$app_info:
+	Contains info like website title, contact etc
+$db: the global database object
+$session
+$form
+$pages
+$html
+$pagination
+$_GET['currentPage'] for showing current page in the pagination
+$_SESSION['res_per_page'] store results per page option for the user

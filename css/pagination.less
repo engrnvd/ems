@@ -1,0 +1,42 @@
+// pagination styles
+@paginationColor:@brand-primary;
+#paginationWraper{
+  @bordr: 1px solid @brand-primary;
+  color: @paginationColor;
+  background-color: lighten(@brand-primary,50%);
+  border-top: @bordr;
+  border-bottom: @bordr;
+  padding-top: 0.3em;
+  li a{
+    border: 1px solid @brand-primary;
+  }
+}
+.pagination-info{
+  p{
+    margin: 0;
+    padding: 6px 5px;
+    border: 1px solid @brand-primary;
+    border-radius: 4px;
+    text-align: center;
+  }
+}
+
+.pagination{
+  margin: 0;
+}
+#paginationForm{
+  p{
+    padding: 4px 5px;
+  }
+  label{
+    margin: 0;
+    font-weight: normal;
+  }
+}
+#res_per_page{
+  color: @paginationColor;
+  width: 2em;
+  border: 1px solid @brand-primary;
+  border-radius: 4px;
+  text-align: center;
+}
